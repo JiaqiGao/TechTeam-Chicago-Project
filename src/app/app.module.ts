@@ -18,6 +18,7 @@ import { CallNumber } from '@ionic-native/call-number';
 
 
 import 'rxjs/Rx';
+import { DiseaseProvider } from '../providers/disease/disease';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import 'rxjs/Rx';
     SplashScreen,
     HTTP,
     CallNumber,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    DiseaseProvider,
   ]
 })
 export class AppModule {}
