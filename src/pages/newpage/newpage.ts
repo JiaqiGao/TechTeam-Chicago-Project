@@ -39,22 +39,6 @@ export class NewpagePage {
     for (var i=1; i<this.alt_names.length; i++){
       this.alt_names[i] = " "+ this.alt_names[i];
     }
-
-
-    /*
-    this.http.get('assets/data.json', {}, {})
-      .then(data => {
-
-        console.log(data["data"]);
-      })
-      .catch(error => {
-        console.log("fails");
-        console.log(error.status);
-        console.log(error.error); // error message as string
-        console.log(error.headers);
-
-      });
-    */
   }
 
   callingNumber(telephoneNumber) {
