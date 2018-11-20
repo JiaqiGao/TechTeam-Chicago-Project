@@ -764,21 +764,6 @@ export class HomePage {
     this.items.splice(this.items.indexOf("Any Public Health Hazard"), 1);
     this.items.unshift("Any Public Health Hazard");
 
-    /*
-    this.http.get('assets/data.json', {}, {})
-      .then(data => {
-        this.allItems = Object.keys(JSON.parse(data.data)["data"]["diseases"]);
-        this.items = this.allItems.sort();
-      })
-      .catch(error => {
-        console.log("fails");
-        console.log(error.status);
-        console.log(error.error); // error message as string
-        console.log(error.headers);
-
-      });
-    */
-
   }
 
 
