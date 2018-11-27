@@ -28,9 +28,9 @@
     </ion-row>
 
     <ion-row id="popups">
-      <button color ="button" ion-button full (click)="afterHoursToast()"> After hours information </button>
+      <button color ="button" ion-button full (click)="afterHoursToast()" [disabled]="disableButton"> After hours information </button>
       <!-- <button color ="button" ion-button full (click)="labReqsToast()"> Lab requirements </button> -->
-      <button color ="button" ion-button full (click)="legalToast()"> Does HIPAA allow this? </button>
+      <button color ="button" ion-button full (click)="legalToast()" [disabled]="disableButton2"> Does HIPAA allow this? </button>
       <!-- <button color ="button" ion-button full (click)="showToastWithCloseButton()"> Option 2 </button> -->
     </ion-row>
   </ion-grid>
